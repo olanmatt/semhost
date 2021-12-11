@@ -1,0 +1,48 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 0px;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+
+    /* Fixes for mobile appearance */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+form {
+    width: fit-content;
+}
+
+div.label {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+div.label#purpose {
+    margin-left: 1ch;
+}
+
+#copyToClipboard:hover {
+    text-decoration: underline;
+}

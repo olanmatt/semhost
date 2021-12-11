@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>semantic hostnames</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="flow-offset">
+        <h1>semantic hostnames</h1>
+        <small>v0.1.0-alpha - <a href="https://github.com/olanmatt/semantic.host">Github</a></small>
+    </header>
+
+    <div>
+        <form autocomplete="off">
+            <div class="label" id="purpose">
+                <input type="text" name="organization" placeholder="org" pattern="[a-z0-9]+" />
+                -
+                <input type="text" name="tier" placeholder="tier" pattern="[a-z0-9]+" />
+                -
+                <input type="text" name="role" placeholder="role" pattern="[a-z0-9]+" />
+                -
+                <input type="text" name="sequence" placeholder="seq" pattern="[0-9]+" />
+            </div>
+            <div class="label" id="locale">
+                .
+                <input type="text" name="provider" placeholder="provider" pattern="[a-z0-9]{3}" />
+                -
+                <input type="text" name="region" placeholder="region" pattern="[a-z]{3}[1-9]" />
+            </div>
+            <div class="label" id="domain">
+                .
+                <input type="text" name="domain" placeholder="domain"
+                    pattern="^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$" />
+            </div>
+        </form>
+        <div class="flow-offset" id="errors"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
